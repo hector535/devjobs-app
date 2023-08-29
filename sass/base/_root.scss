@@ -6,6 +6,7 @@
 
   --clr-neutral-100: 0, 0%, 100%;
   --clr-neutral-300: 217, 26%, 97%;
+  --clr-neutral-400: 215, 24%, 80%;
   --clr-neutral-500: 212, 23%, 69%;
   --clr-neutral-600: 214, 17%, 51%;
 
@@ -16,6 +17,7 @@
 
   --clr-neutral-100-hsl: hsl(var(--clr-neutral-100));
   --clr-neutral-300-hsl: hsl(var(--clr-neutral-300));
+  --clr-neutral-400-hsl: hsl(var(--clr-neutral-400));
   --clr-neutral-500-hsl: hsl(var(--clr-neutral-500));
   --clr-neutral-600-hsl: hsl(var(--clr-neutral-600));
 
@@ -27,20 +29,26 @@
   --page-bg-color: var(--clr-neutral-300-hsl);
   --heading-color: var(--clr-primary-800-hsl);
   --container-bg-color: var(--clr-neutral-100-hsl);
-  --input-text-color: hsla(var(--clr-primary-800), 0.5);
+  --input-placeholder-color: hsla(var(--clr-primary-800), 0.5);
+  --input-text-color: var(--clr-primary-800-hsl);
   --text-color: var(--clr-neutral-600-hsl);
   --secondary-button-text-color: var(--clr-primary-400-hsl);
   --secondary-button-bg-color: hsla(var(--clr-primary-400), 0.1);
   --secondary-button-hover-bg-color: hsla(var(--clr-primary-400), 0.35);
+  --spinner-bg-color: var(--clr-neutral-400-hsl);
+  --spinner-color: var(--clr-neutral-600-hsl);
 }
 
 [data-theme="dark"] {
   --page-bg-color: var(--clr-primary-900-hsl);
   --heading-color: var(--clr-neutral-100-hsl);
   --container-bg-color: var(--clr-primary-800-hsl);
-  --input-text-color: hsla(var(--clr-neutral-100), 0.5);
+  --input-placeholder-color: hsla(var(--clr-neutral-100), 0.5);
+  --input-text-color: var(--clr-neutral-100-hsl);
   --text-color: var(--clr-neutral-500-hsl);
   --secondary-button-text-color: var(--clr-neutral-100-hsl);
   --secondary-button-bg-color: hsla(var(--clr-neutral-100), 0.1);
   --secondary-button-hover-bg-color: hsla(var(--clr-neutral-100), 0.35);
+  --spinner-bg-color: var(--clr-neutral-600-hsl);
+  --spinner-color: var(--clr-neutral-300-hsl);
 }
