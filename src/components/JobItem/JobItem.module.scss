@@ -1,0 +1,51 @@
+.job_item_container {
+  --padding: 2rem;
+
+  height: 14.25rem;
+
+  border-radius: 6px;
+
+  padding: var(--padding);
+  padding-top: 3rem;
+
+  background: var(--container-bg-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.company_logo_container {
+  position: absolute;
+  top: 0;
+  left: var(--padding);
+
+  transform: translateY(-50%);
+
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub_container {
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--heading-color);
+}
+
+.location {
+  color: var(--clr-primary-400-hsl);
+  font-size: 0.875rem;
+  font-weight: var(--fw-bold);
+}
