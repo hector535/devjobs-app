@@ -1,0 +1,11 @@
+.header {
+  padding-block: 2rem;
+  background-image: url("/mobile/bg-pattern-header.svg");
+  height: 8.5rem;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
