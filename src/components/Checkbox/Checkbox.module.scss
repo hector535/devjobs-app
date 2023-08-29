@@ -1,0 +1,44 @@
+.checkbox_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hidden_checkbox {
+  display: none;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 3px;
+  background: hsla(var(--clr-primary-800), 0.1);
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background: hsla(var(--clr-primary-400), 0.25);
+  }
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    top: -3px;
+    width: 6px;
+    height: 14px;
+    border: solid var(--clr-neutral-100-hsl);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.hidden_checkbox:checked + .checkbox {
+  background: var(--clr-primary-400-hsl);
+}
+
+.hidden_checkbox:checked + .checkbox::before {
+  display: block;
+}
