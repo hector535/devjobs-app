@@ -1,0 +1,35 @@
+.toggle_switch_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inner_checkbox {
+  display: none;
+}
+
+.toggle {
+  width: 3rem;
+  height: 1.5rem;
+  background: var(--clr-neutral-100-hsl);
+  border-radius: 100vmax;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.switch {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  border-radius: 100vmax;
+  width: 0.875rem;
+  height: 0.875rem;
+  background: var(--clr-primary-400-hsl);
+  transition: left 0.3s ease;
+}
+
+.inner_checkbox:checked + .switch {
+  left: 28px;
+}
