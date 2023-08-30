@@ -1,8 +1,8 @@
 .btn {
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border: 0;
 
-  padding-inline: 1rem;
+  padding-inline: 0.875rem;
   height: 3rem;
   font-size: 1rem;
   font-weight: var(--fw-bold);
@@ -35,4 +35,11 @@
   gap: 1rem;
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }

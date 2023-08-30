@@ -10,12 +10,19 @@ export const Button = (props: ButtonProps) => {
     loading,
     disabled,
     children,
+    className,
     ...restProps
   } = props;
 
   return (
     <button
-      className={clsx(style.btn, style[variant], { [style.loading]: loading })}
+      className={clsx(
+        style.btn,
+        style[variant],
+        { [style.loading]: loading },
+        { [style.icon]: !!icon },
+        className
+      )}
       disabled={loading || disabled}
       {...restProps}
     >
