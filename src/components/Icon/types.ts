@@ -1,3 +1,3 @@
 export type IconProps = {
-  name: "check" | "location" | "moon" | "search" | "sun";
+  name: "check" | "location" | "moon" | "search" | "sun" | "filter";
 } & React.ComponentPropsWithoutRef<"svg">;
