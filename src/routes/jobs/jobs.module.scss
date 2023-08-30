@@ -1,0 +1,13 @@
+.main {
+  padding-top: 6.125rem;
+  position: relative;
+}
+
+.main_filter_bar {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  transform: translateY(-50%);
+}
