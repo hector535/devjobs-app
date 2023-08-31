@@ -1,8 +1,8 @@
 @use "../abstracts/" as *;
 
-:is(a, button, input, textarea, select, details, summary, div) {
+:is(a, button, input, textarea, select, details, summary, div, label) {
   &:focus-visible {
-    outline: var(--outline-color) dotted 0.19rem;
+    outline: black dotted 0.19rem;
     outline-offset: 0.19rem;
   }
 }
