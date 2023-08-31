@@ -1,0 +1,16 @@
+.loading_container {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  margin-left: 1rem;
+}
+
+.fullscreen {
+  height: 100vh;
+}
