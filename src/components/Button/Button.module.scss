@@ -28,6 +28,12 @@
   }
 }
 
+.ghost {
+  background: transparent;
+  padding: 0;
+  height: auto;
+}
+
 .loading {
   display: flex;
   justify-content: space-between;
