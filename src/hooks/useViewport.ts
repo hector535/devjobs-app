@@ -2,10 +2,7 @@ import { useEffect, useState } from "react";
 import { getViewportSize } from "@/utils/viewport";
 
 export const useViewport = () => {
-  const [size, setSize] = useState<{ vw: number; vh: number }>({
-    vw: 0,
-    vh: 0,
-  });
+  const [size, setSize] = useState<{ vw: number; vh: number }>(getViewportSize);
 
   useEffect(() => {
     const resize = () => setSize(getViewportSize());
