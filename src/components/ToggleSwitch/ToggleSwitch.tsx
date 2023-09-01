@@ -10,13 +10,23 @@ import style from "./ToggleSwitch.module.scss";
 export const ToggleSwitch = () => {
   const [checked, setChecked] = useState(getThemeFromStorage);
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLLabelElement>) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+
+    setChecked(!checked);
+  };
+
   useEffect(() => {
     localStorage.setItem("theme", getThemeFromFlag(checked));
     setDocumentTheme(checked);
   }, [checked]);
 
   return (
-    <label className={style.toggle_switch_container}>
+    <label
+      tabIndex={0}
+      className={style.toggle_switch_container}
+      onKeyDown={handleKeyDown}
+    >
       <Icon name="sun" />
       <span className={style.toggle}>
         <input

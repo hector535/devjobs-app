@@ -1,19 +1,39 @@
+import { useState } from "react";
+import clsx from "clsx";
 import { type CheckboxProps } from "./types";
 import style from "./Checkbox.module.scss";
 
 export const Checkbox = (props: CheckboxProps) => {
-  const { label, checked = false, onChange } = props;
+  const { label, checked = false, className, onChange } = props;
+
+  const [isChecked, setIsChecked] = useState(checked);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(e.target.checked);
+    onChange(e.target.checked);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLLabelElement>) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+
+    setIsChecked(!isChecked);
+    onChange(!isChecked);
+  };
 
   return (
-    <label className={style.checkbox_container}>
+    <label
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+      className={clsx(style.checkbox_container, className)}
+    >
       <input
         className={style.hidden_checkbox}
         type="checkbox"
-        checked={checked}
-        onChange={(e) => onChange(e.target.checked)}
+        checked={isChecked}
+        onChange={handleChange}
       />
       <span className={style.checkbox}></span>
-      {label}
+      <span className={style.text}>{label}</span>
     </label>
   );
 };

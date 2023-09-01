@@ -1,13 +1,48 @@
+@use "../../../sass/abstracts/" as *;
+
 .main {
-  padding-top: 6.125rem;
+  --padding-top: 6.125rem;
+
+  padding-top: var(--padding-top);
+
   position: relative;
+
+  display: grid;
+  grid-template-rows: calc(
+    100vh - var(--header-height) - var(--padding-top) - 2rem
+  );
 }
 
 .main_filter_bar {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
-  margin-inline: auto;
   transform: translateY(-50%);
+}
+
+[data-test-id="virtuoso-scroller"] {
+  &::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--clr-neutral-600-hsl);
+    border-radius: 100vmax;
+  }
+}
+
+.virtuoso_grid {
+  display: grid;
+  margin-top: 1.5625rem;
+  column-gap: clamp(0.5rem, 0.01578rem + 2.066vw, 1.875rem);
+  row-gap: clamp(3rem, 2.62594rem + 1.596vw, 4.0625rem);
+
+  @include min-breakpoint(375px) {
+    grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  }
 }

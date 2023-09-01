@@ -5,15 +5,19 @@ const delay = 1500;
 export const getJobs = async (
   title: string,
   location: string,
+  isFullTime: boolean,
   limit: number = 20,
   skip: number = 0
 ) => {
   await new Promise((resolve) => setTimeout(resolve, delay));
 
+  const contract = isFullTime ? "Full Time" : "Part Time";
+
   const filteredJobs = jobs.filter(
     (j) =>
       j.position.toLowerCase().includes(title.toLowerCase()) &&
-      j.location.toLowerCase().includes(location.toLowerCase())
+      j.location.toLowerCase().includes(location.toLowerCase()) &&
+      j.contract === contract
   );
 
   return filteredJobs.slice(skip, skip + limit);

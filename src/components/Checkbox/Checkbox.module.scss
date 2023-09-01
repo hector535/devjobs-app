@@ -9,10 +9,12 @@
 }
 
 .checkbox {
+  flex-shrink: 0;
+
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 3px;
-  background: hsla(var(--clr-primary-800), 0.1);
+  background: var(--checkbox-bg-color);
   position: relative;
   cursor: pointer;
 
@@ -41,4 +43,10 @@
 
 .hidden_checkbox:checked + .checkbox::before {
   display: block;
+}
+
+.text {
+  flex-shrink: 0;
+  color: var(--heading-color);
+  font-weight: var(--fw-bold);
 }

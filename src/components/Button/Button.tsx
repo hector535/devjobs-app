@@ -1,7 +1,7 @@
 import clsx from "clsx";
+import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 import { type ButtonProps } from "./types";
 import style from "./Button.module.scss";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 
 export const Button = (props: ButtonProps) => {
   const {

@@ -1,7 +1,7 @@
 import { FilterBarFields } from "@/types/filter_bar";
 
-export type FilterBarProps = {
+export type MobileFilterBarProps = {
   className?: string;
   defaultValues: FilterBarFields;
-  onSubmit: (values: FilterBarFields) => void;
+  onSubmit: (formValues: FilterBarFields) => void;
 };

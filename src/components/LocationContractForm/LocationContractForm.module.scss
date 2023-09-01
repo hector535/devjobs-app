@@ -1,0 +1,16 @@
+.form {
+  --padding: 1.5rem;
+
+  padding: var(--padding);
+  display: grid;
+  gap: 1.75rem;
+}
+
+.separator {
+  position: relative;
+  left: calc(var(--padding) * -1);
+  border: 0;
+  height: 2px;
+  background: hsla(var(--clr-neutral-600), 0.2);
+  width: calc(100% + var(--padding) * 2);
+}

@@ -26,6 +26,9 @@
   --fw-regular: 400;
   --fw-bold: 700;
 
+  --backdrop-z-index: 10;
+  --modal-z-index: 100;
+
   --header-height: 8.5rem;
   --border-radius: 6px;
   --container-width: min(90%, 69.375rem);
@@ -34,6 +37,8 @@
   --container-bg-color: var(--clr-neutral-100-hsl);
   --input-placeholder-color: hsla(var(--clr-primary-800), 0.5);
   --input-text-color: var(--clr-primary-800-hsl);
+  --checkbox-bg-color: hsla(var(--clr-primary-800), 0.1);
+
   --text-color: var(--clr-neutral-600-hsl);
   --secondary-button-text-color: var(--clr-primary-400-hsl);
   --secondary-button-bg-color: hsla(var(--clr-primary-400), 0.1);
@@ -48,6 +53,8 @@
   --container-bg-color: var(--clr-primary-800-hsl);
   --input-placeholder-color: hsla(var(--clr-neutral-100), 0.5);
   --input-text-color: var(--clr-neutral-100-hsl);
+  --checkbox-bg-color: hsla(var(--clr-neutral-100), 0.1);
+
   --text-color: var(--clr-neutral-500-hsl);
   --secondary-button-text-color: var(--clr-neutral-100-hsl);
   --secondary-button-bg-color: hsla(var(--clr-neutral-100), 0.1);

@@ -1,4 +1,4 @@
-export interface ICountry {
+export interface IJob {
   id: number;
   company: string;
   logo: string;

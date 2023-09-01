@@ -3,9 +3,13 @@
   border: 0;
 
   padding-inline: 0.875rem;
+
+  width: 100%;
   height: 3rem;
+
   font-size: 1rem;
   font-weight: var(--fw-bold);
+
   user-select: none;
   cursor: pointer;
 }

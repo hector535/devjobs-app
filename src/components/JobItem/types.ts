@@ -1,5 +1,5 @@
-import { ICountry } from "@/types/job";
+import { IJob } from "@/types/job";
 
 export type JobItemProps = {
-  job: ICountry;
+  job: IJob;
 };

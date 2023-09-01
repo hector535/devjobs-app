@@ -1,0 +1,24 @@
+@use "../../../sass/abstracts/" as *;
+
+.filter_bar_container {
+  height: 5rem;
+  border-radius: var(--border-radius);
+
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+
+  gap: clamp(0.8rem, -1.26308rem + 11.789vw, 1.5rem);
+
+  background: var(--container-bg-color);
+  padding-inline: 1rem;
+}
+
+.search_icon {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  path {
+    fill: var(--clr-neutral-100-hsl);
+  }
+}
