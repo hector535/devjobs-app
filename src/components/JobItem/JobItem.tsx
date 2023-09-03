@@ -1,6 +1,7 @@
 import { CompanyLogo } from "../CompanyLogo/CompanyLogo";
 import { type JobItemProps } from "./types";
 import style from "./JobItem.module.scss";
+import { Logo } from "@/types/logo";
 
 export const JobItem = (props: JobItemProps) => {
   const { job, onClick } = props;
@@ -9,7 +10,7 @@ export const JobItem = (props: JobItemProps) => {
     <div className={style.job_item_container} onClick={onClick}>
       <CompanyLogo
         bgColor={job.logoBackground}
-        url={job.logo}
+        logo={job.logo as Logo}
         className={style.job_company_logo}
       />
 

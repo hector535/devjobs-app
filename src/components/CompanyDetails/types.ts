@@ -1,6 +1,8 @@
+import { Logo } from "@/types/logo";
+
 export type CompanyDetailsProps = {
   className?: string;
-  logoURL: string;
+  logo: Logo;
   logoBgColor: string;
   company: string;
   site: string;

@@ -1,9 +1,9 @@
-import { ReactComponent as CheckIcon } from "@/assets/icon-check.svg";
-import { ReactComponent as LocationIcon } from "@/assets/icon-location.svg";
-import { ReactComponent as MoonIcon } from "@/assets/icon-moon.svg";
-import { ReactComponent as SearchIcon } from "@/assets/icon-search.svg";
-import { ReactComponent as SunIcon } from "@/assets/icon-sun.svg";
-import { ReactComponent as FilterIcon } from "@/assets/icon-filter.svg";
+import { ReactComponent as CheckIcon } from "@/assets/icons/icon-check.svg";
+import { ReactComponent as LocationIcon } from "@/assets/icons/icon-location.svg";
+import { ReactComponent as MoonIcon } from "@/assets/icons/icon-moon.svg";
+import { ReactComponent as SearchIcon } from "@/assets/icons/icon-search.svg";
+import { ReactComponent as SunIcon } from "@/assets/icons/icon-sun.svg";
+import { ReactComponent as FilterIcon } from "@/assets/icons/icon-filter.svg";
 import { type IconProps } from "./types";
 
 export const Icon = (props: IconProps) => {

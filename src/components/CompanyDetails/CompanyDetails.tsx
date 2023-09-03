@@ -5,13 +5,13 @@ import { CompanyDetailsProps } from "./types";
 import style from "./CompanyDetails.module.scss";
 
 export const CompanyDetails = (props: CompanyDetailsProps) => {
-  const { className, logoURL, company, logoBgColor, site } = props;
+  const { className, logo, company, logoBgColor, site } = props;
 
   return (
     <section className={clsx(style.company_container, className)}>
       <CompanyLogo
         className={style.company_details_logo}
-        url={logoURL}
+        logo={logo}
         bgColor={logoBgColor}
       />
 

@@ -17,6 +17,11 @@
 
   @include min-breakpoint(768px) {
     top: -30px;
+
+    svg {
+      width: 81px;
+      height: 23px;
+    }
   }
 }
 

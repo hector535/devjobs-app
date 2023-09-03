@@ -1,4 +1,4 @@
-import { ReactComponent as SadFaceSVG } from "@/assets/sad-face.svg";
+import { ReactComponent as SadFaceSVG } from "@/assets/misc/sad-face.svg";
 import style from "./NoResultsMessage.module.scss";
 
 export const NoResultsMessage = () => {

@@ -6,6 +6,7 @@ import { JobContractDetails } from "@/components/JobContractDetails/JobContractD
 import { LoadingView } from "@/components/LoadingView/LoadingView";
 import { useJob } from "./useJob";
 import style from "./job.module.scss";
+import { Logo } from "@/types/logo";
 
 const Job = () => {
   const { id } = useParams();
@@ -22,7 +23,7 @@ const Job = () => {
           className={style.job_company_details}
           company={job.company}
           logoBgColor={job.logoBackground}
-          logoURL={job.logo}
+          logo={job.logo as Logo}
           site={job.website}
         />
 
