@@ -3,14 +3,14 @@
 <div align="center">
   <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
-  <h2 align="center">REST Countries API with color theme switcher</h2>
+  <h2 align="center">Devjobs web app</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://rest-countries-finder-adb11a.netlify.app/">View Demo</a>
+    <a href="https://devjobs-a6c52b.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/hector535/rest-countries/issues" target="_blank">Report Bug</a>
+    <a href="https://github.com/hector535/devjobs-app/issues" target="_blank">Report Bug</a>
     <br />
     <br />
   </p>
@@ -37,12 +37,12 @@
 
 </div>
 
-This is a solution to the [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Devjobs web app](https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [REST Countries API | React + TypeScript + React Query + React Router | Frontend Mentor](https://www.frontendmentor.io/solutions/rest-countries-api-react-typescript-react-query-react-router-CpKf1nq3lh)
-- Live Site URL: [https://rest-countries-finder-adb11a.netlify.app/](https://rest-countries-finder-adb11a.netlify.app/)
+- Solution URL: [Devjobs web app | React + TypeScript + React Router](https://www.frontendmentor.io/solutions/rest-countries-api-react-typescript-react-query-react-router-CpKf1nq3lh)
+- Live Site URL: [https://devjobs-a6c52b.netlify.app/](https://devjobs-a6c52b.netlify.app/)
 
 <br>
 
@@ -61,13 +61,12 @@ This is a solution to the [REST Countries API with color theme switcher](https:/
 
 Your users should be able to:
 
-- See all countries from the API on the homepage
-- Search for a country using an input field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- View the optimal layout for the interface depending on their device's screen size
-- Bonus: Toggle the color scheme between light and dark mode
+- Be able to filter jobs on the index page by title, location, and whether a job is for a full-time position
+- Be able to click a job from the index page so that they can read more information and apply for the job
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. Hint: Research prefers-color-scheme in CSS.
+- **Bonus**: Build this project as a full-stack application
 
 ## My process
 
@@ -77,7 +76,6 @@ Your users should be able to:
 - React.js
 - TypeScript
 - React-Router
-- React-Query
 - SASS Modules
 
 #### Test Runner
@@ -90,13 +88,13 @@ You must have [Node.js](https://nodejs.org/en) installed on your computer before
 Once installed, you can proceed to clone the project:
 
 ```
-    git clone https://github.com/hector535/rest-countries.git
+    git clone https://github.com/hector535/devjobs-app.git
 ```
 
 Then, change the working directory to the cloned project:
 
 ```
-    cd rest-countries
+    cd devjobs-app
 ```
 
 And finally, install the project's dependencies:
@@ -138,7 +136,6 @@ See the section about [deployment](https://vitejs.dev/guide/static-deploy.html) 
 - [React](https://reactjs.org/docs/getting-started.html)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [React Router](https://reactrouter.com/en/main)
-- [React-Query](https://tanstack.com/query/latest/)
 - [SASS](https://sass-lang.com/)
 
 ## Author
