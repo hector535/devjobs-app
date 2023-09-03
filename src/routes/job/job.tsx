@@ -78,8 +78,8 @@ const Job = () => {
       <footer className={style.footer}>
         <div className={style.footer_content}>
           <div className={style.footer_text_container}>
-            <h3 className={style.sub_heading}>Senior Software Engineer</h3>
-            <p>So Digitial Inc.</p>
+            <h3 className={style.sub_heading}>{job.position}</h3>
+            <p>{job.company}</p>
           </div>
           <Button as="a" href={job.apply} className={style.apply_btn}>
             Apply Now
