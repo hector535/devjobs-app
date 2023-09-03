@@ -11,7 +11,7 @@ export const ToggleSwitch = () => {
   const [checked, setChecked] = useState(getThemeFromStorage);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLLabelElement>) => {
-    if (e.key !== "Enter" && e.key !== " ") return;
+    if (e.code !== "Enter" && e.code !== "Space") return;
 
     setChecked(!checked);
   };

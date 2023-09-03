@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <header className={style.header}>
       <div className={clsx("container", style.header_content)}>
-        <Link to="/jobs">
+        <Link to="/jobs" title="Company site">
           <CompanyLogo />
         </Link>
         <ToggleSwitch />

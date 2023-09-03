@@ -14,7 +14,7 @@ export const Checkbox = (props: CheckboxProps) => {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLLabelElement>) => {
-    if (e.key !== "Enter" && e.key !== " ") return;
+    if (e.code !== "Enter" && e.code !== "Space") return;
 
     setIsChecked(!isChecked);
     onChange(!isChecked);

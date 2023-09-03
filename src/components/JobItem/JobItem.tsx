@@ -6,8 +6,19 @@ import { Logo } from "@/types/logo";
 export const JobItem = (props: JobItemProps) => {
   const { job, onClick } = props;
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.code !== "Enter" && e.code !== "Space") return;
+
+    onClick();
+  };
+
   return (
-    <div className={style.job_item_container} onClick={onClick}>
+    <div
+      tabIndex={0}
+      className={style.job_item_container}
+      onClick={onClick}
+      onKeyDown={handleKeyDown}
+    >
       <CompanyLogo
         bgColor={job.logoBackground}
         logo={job.logo as Logo}

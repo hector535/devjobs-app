@@ -1,6 +1,8 @@
 :root {
+  --clr-primary-200: 234, 75%, 78%;
   --clr-primary-300: 235, 82%, 77%;
   --clr-primary-400: 235, 69%, 61%;
+  --clr-primary-500: 235, 69%, 55%;
   --clr-primary-800: 219, 29%, 14%;
   --clr-primary-900: 219, 29%, 10%;
 
@@ -9,10 +11,13 @@
   --clr-neutral-400: 215, 24%, 80%;
   --clr-neutral-500: 212, 23%, 69%;
   --clr-neutral-600: 214, 17%, 51%;
+  --clr-neutral-700: 221, 15%, 37%;
   --clr-neutral-900: 0, 0%, 0%;
 
+  --clr-primary-200-hsl: hsl(var(--clr-primary-200));
   --clr-primary-300-hsl: hsl(var(--clr-primary-300));
   --clr-primary-400-hsl: hsl(var(--clr-primary-400));
+  --clr-primary-500-hsl: hsl(var(--clr-primary-500));
   --clr-primary-800-hsl: hsl(var(--clr-primary-800));
   --clr-primary-900-hsl: hsl(var(--clr-primary-900));
 
@@ -21,6 +26,7 @@
   --clr-neutral-400-hsl: hsl(var(--clr-neutral-400));
   --clr-neutral-500-hsl: hsl(var(--clr-neutral-500));
   --clr-neutral-600-hsl: hsl(var(--clr-neutral-600));
+  --clr-neutral-700-hsl: hsl(var(--clr-neutral-700));
   --clr-neutral-900-hsl: hsl(var(--clr-neutral-900));
 
   --ff-regular: "Kumbh Sans", sans-serif;
@@ -31,7 +37,9 @@
   --backdrop-z-index: 10;
   --modal-z-index: 100;
 
+  --focus-outline-color: var(--clr-primary-800-hsl);
   --svg-fill-color: var(--clr-neutral-900-hsl);
+  --location-text-color: var(--clr-primary-400-hsl);
 
   --header-height: 8.5rem;
   --border-radius: 6px;
@@ -43,8 +51,8 @@
   --input-text-color: var(--clr-primary-800-hsl);
   --checkbox-bg-color: hsla(var(--clr-primary-800), 0.1);
 
-  --text-color: var(--clr-neutral-600-hsl);
-  --secondary-button-text-color: var(--clr-primary-400-hsl);
+  --text-color: var(--clr-neutral-700-hsl);
+  --secondary-button-text-color: var(--clr-primary-500-hsl);
   --secondary-button-bg-color: hsla(var(--clr-primary-400), 0.1);
   --secondary-button-hover-bg-color: hsla(var(--clr-primary-400), 0.35);
   --spinner-bg-color: var(--clr-neutral-400-hsl);
@@ -52,6 +60,8 @@
 }
 
 [data-theme="dark"] {
+  --focus-outline-color: var(--clr-neutral-100-hsl);
+  --location-text-color: var(--clr-primary-200-hsl);
   --svg-fill-color: var(--clr-neutral-100-hsl);
   --page-bg-color: var(--clr-primary-900-hsl);
   --heading-color: var(--clr-neutral-100-hsl);
