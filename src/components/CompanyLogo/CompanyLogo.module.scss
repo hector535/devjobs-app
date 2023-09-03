@@ -1,0 +1,10 @@
+.logo_container {
+  width: 3.125rem;
+  height: 3.125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--border-radius);
+}
