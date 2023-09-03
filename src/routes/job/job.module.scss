@@ -119,6 +119,7 @@
   @include min-breakpoint(768px) {
     display: grid;
     grid-template-columns: 1fr auto;
+    align-items: center;
 
     width: min(95%, 45.625rem);
     margin-inline: auto;
