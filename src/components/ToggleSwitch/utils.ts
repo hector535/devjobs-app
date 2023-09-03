@@ -4,8 +4,15 @@ const getFlagFromTheme = (mode: "light" | "dark") =>
   mode === "light" ? false : true;
 
 export const getThemeFromStorage = () => {
-  const mode = (localStorage.getItem("theme") || "light") as "light" | "dark";
-  return getFlagFromTheme(mode);
+  const storedTheme = localStorage.getItem("theme");
+
+  if (storedTheme) return getFlagFromTheme(storedTheme as "light" | "dark");
+
+  const lightThemePreference = window.matchMedia(
+    "(prefers-color-scheme: light)"
+  );
+
+  return getFlagFromTheme(lightThemePreference.matches ? "light" : "dark");
 };
 
 export const setDocumentTheme = (flag: boolean) => {
