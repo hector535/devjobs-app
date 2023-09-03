@@ -31,3 +31,7 @@
     grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   }
 }
+
+[data-test-id="virtuoso-scroller"] {
+  scrollbar-width: thin;
+}

@@ -8,7 +8,7 @@ export const useJob = (id: number) => {
   const [isLoading, setIsLoading] = useState(true);
   const { showBoundary } = useErrorBoundary();
 
-  const fetchJob = async () => {
+  const fetchJob = async (id: number) => {
     try {
       setIsLoading(true);
 
@@ -22,8 +22,8 @@ export const useJob = (id: number) => {
   };
 
   useEffect(() => {
-    fetchJob();
-  }, []);
+    fetchJob(id);
+  }, [id]);
 
   return { job: data ?? ({} as IJob), isLoading };
 };
