@@ -75,6 +75,10 @@
   gap: 0.2rem;
 }
 
+.site {
+  overflow-wrap: anywhere;
+}
+
 .company_name {
   color: var(--heading-color);
   font-size: clamp(1.25rem, 1.16188rem + 0.376vw, 1.5rem);

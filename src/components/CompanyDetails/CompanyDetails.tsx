@@ -18,7 +18,7 @@ export const CompanyDetails = (props: CompanyDetailsProps) => {
       <div className={style.info_container}>
         <div className={style.heading_container}>
           <h1 className={style.company_name}>{company}</h1>
-          <p>{site}</p>
+          <p className={style.site}>{site}</p>
         </div>
 
         <Button as="a" href={site} variant="secondary">
