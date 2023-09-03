@@ -1,0 +1,135 @@
+@use "../../../sass/abstracts/" as *;
+
+.page_container {
+  width: min(90%, 45.625rem);
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.loading_view {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.job_company_details {
+  top: -15px;
+
+  @include min-breakpoint(768px) {
+    top: -30px;
+  }
+}
+
+.main_section {
+  padding-block: 2.5rem;
+  padding-inline: clamp(1.5rem, 0.54586rem + 4.071vw, 2.5rem);
+
+  border-radius: var(--border-radius);
+  background: var(--container-bg-color);
+  @include transition-bg-color();
+
+  display: grid;
+  gap: 2rem;
+}
+
+.job_description,
+.requirements,
+.responsabilities {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.job_description,
+.requirements,
+.responsabilities {
+  p {
+    line-height: 1.625rem;
+  }
+}
+
+.position_apply_container {
+  display: grid;
+  gap: 3.375rem;
+
+  @include min-breakpoint(768px) {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: initial;
+  }
+}
+
+.apply_btn {
+  @include min-breakpoint(768px) {
+    width: auto;
+    padding-inline: 1.75rem;
+  }
+}
+
+.position_details_container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.heading,
+.sub_heading {
+  color: var(--heading-color);
+  @include transition-text-color();
+
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+}
+
+.heading {
+  font-size: clamp(1.25rem, 0.77281rem + 2.036vw, 1.75rem);
+}
+
+.list {
+  margin-left: 1.15rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.list_item {
+  padding-left: 1rem;
+}
+
+.list__number {
+  list-style-type: decimal;
+  color: var(--clr-primary-400-hsl);
+  font-weight: var(--fw-bold);
+
+  p {
+    color: var(--text-color);
+    @include transition-text-color();
+
+    font-weight: var(--fw-regular);
+  }
+}
+
+.footer {
+  padding: 1.5rem;
+
+  border-radius: var(--border-radius);
+
+  background: var(--container-bg-color);
+  @include transition-bg-text-color();
+}
+
+.footer_content {
+  @include min-breakpoint(768px) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    width: min(95%, 45.625rem);
+    margin-inline: auto;
+  }
+}
+
+.footer_text_container {
+  display: none;
+
+  @include min-breakpoint(768px) {
+    display: grid;
+    gap: 0.3rem;
+  }
+}
