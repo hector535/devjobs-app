@@ -1,7 +1,7 @@
 import jobs from "@/data/jobs.json";
 import { IJob } from "@/types/job";
 
-const delay = 1500;
+const delay = 800;
 
 export const getJobs = async (
   title: string,
