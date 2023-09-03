@@ -17,12 +17,16 @@ import style from "./jobs.module.scss";
 const Jobs = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const [formValues, setFormValues] = useState<FilterBarFields>(() =>
-    extractFiltersFromURL(searchParams)
-  );
+  const filters = extractFiltersFromURL(searchParams);
+
+  const [formValues, setFormValues] = useState<FilterBarFields>(filters);
 
   const { data, isLoading, isLoadingMore, loadMore } = useJobs(formValues);
   const { vw } = useViewport();
+
+  useEffect(() => {
+    setFormValues(filters);
+  }, [filters.title, filters.location, filters.isFullTime]);
 
   useEffect(() => {
     const { title, location, isFullTime } = formValues;

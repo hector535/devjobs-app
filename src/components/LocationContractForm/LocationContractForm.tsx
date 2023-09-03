@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TextField } from "@/components/TextField/TextField";
 import { Icon } from "@/components/Icon/Icon";
 import { Checkbox } from "@/components/Checkbox/Checkbox";
@@ -16,6 +16,11 @@ export const LocationContractForm = (props: LocationContractFormProps) => {
     e.preventDefault();
     onSubmit({ location, isFullTime });
   };
+
+  useEffect(() => {
+    setLocation(fieldValues.location);
+    setIsFullTime(fieldValues.isFullTime);
+  }, [fieldValues]);
 
   return (
     <form className={style.form} onSubmit={handleSubmit}>

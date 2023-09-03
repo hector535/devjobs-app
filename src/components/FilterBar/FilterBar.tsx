@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Button } from "../Button/Button";
 import { Checkbox } from "../Checkbox/Checkbox";
@@ -19,6 +19,12 @@ export const FilterBar = (props: FilterBarProps) => {
 
     onSubmit({ title, location, isFullTime });
   };
+
+  useEffect(() => {
+    setTitle(defaultValues.title);
+    setLocation(defaultValues.location);
+    setIsFullTime(defaultValues.isFullTime);
+  }, [defaultValues]);
 
   return (
     <form

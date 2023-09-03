@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { type CheckboxProps } from "./types";
 import style from "./Checkbox.module.scss";
@@ -19,6 +19,10 @@ export const Checkbox = (props: CheckboxProps) => {
     setIsChecked(!isChecked);
     onChange(!isChecked);
   };
+
+  useEffect(() => {
+    setIsChecked(checked);
+  }, [checked]);
 
   return (
     <label

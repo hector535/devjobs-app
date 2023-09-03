@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Button } from "@/components/Button/Button";
 import { Icon } from "@/components/Icon/Icon";
@@ -19,6 +19,10 @@ export const MobileFilterBar = (props: MobileFilterBarProps) => {
     e.preventDefault();
     onSubmit(formValues);
   };
+
+  useEffect(() => {
+    setFormValues(defaultValues);
+  }, [defaultValues]);
 
   return (
     <>
