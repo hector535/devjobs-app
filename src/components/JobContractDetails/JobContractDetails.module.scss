@@ -1,0 +1,12 @@
+.contract_details_container {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.circle {
+  width: 4px;
+  height: 4px;
+  border-radius: 100vmax;
+  background: var(--clr-neutral-600-hsl);
+}
