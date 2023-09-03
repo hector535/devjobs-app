@@ -2,7 +2,7 @@
   {
     "id": 1,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -33,7 +33,7 @@
   {
     "id": 2,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -64,7 +64,7 @@
   {
     "id": 3,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -94,7 +94,7 @@
   {
     "id": 4,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -126,7 +126,7 @@
   {
     "id": 5,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -162,7 +162,7 @@
   {
     "id": 6,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -196,7 +196,7 @@
   {
     "id": 7,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -227,7 +227,7 @@
   {
     "id": 8,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -258,7 +258,7 @@
   {
     "id": 9,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -289,7 +289,7 @@
   {
     "id": 10,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -322,7 +322,7 @@
   {
     "id": 11,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -355,7 +355,7 @@
   {
     "id": 12,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -387,7 +387,7 @@
   {
     "id": 13,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -419,7 +419,7 @@
   {
     "id": 14,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -451,7 +451,7 @@
   {
     "id": 15,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -483,7 +483,7 @@
   {
     "id": 16,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -514,7 +514,7 @@
   {
     "id": 17,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -545,7 +545,7 @@
   {
     "id": 18,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -575,7 +575,7 @@
   {
     "id": 19,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -607,7 +607,7 @@
   {
     "id": 20,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -643,7 +643,7 @@
   {
     "id": 21,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -677,7 +677,7 @@
   {
     "id": 22,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -708,7 +708,7 @@
   {
     "id": 23,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -739,7 +739,7 @@
   {
     "id": 24,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -770,7 +770,7 @@
   {
     "id": 25,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -803,7 +803,7 @@
   {
     "id": 26,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -836,7 +836,7 @@
   {
     "id": 27,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -868,7 +868,7 @@
   {
     "id": 28,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -900,7 +900,7 @@
   {
     "id": 29,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -932,7 +932,7 @@
   {
     "id": 30,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -964,7 +964,7 @@
   {
     "id": 31,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -995,7 +995,7 @@
   {
     "id": 32,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -1026,7 +1026,7 @@
   {
     "id": 33,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -1056,7 +1056,7 @@
   {
     "id": 34,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -1088,7 +1088,7 @@
   {
     "id": 35,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -1124,7 +1124,7 @@
   {
     "id": 36,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -1158,7 +1158,7 @@
   {
     "id": 37,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -1189,7 +1189,7 @@
   {
     "id": 38,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -1220,7 +1220,7 @@
   {
     "id": 39,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -1251,7 +1251,7 @@
   {
     "id": 40,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -1284,7 +1284,7 @@
   {
     "id": 41,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -1317,7 +1317,7 @@
   {
     "id": 42,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -1349,7 +1349,7 @@
   {
     "id": 43,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -1381,7 +1381,7 @@
   {
     "id": 44,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -1413,7 +1413,7 @@
   {
     "id": 45,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -1445,7 +1445,7 @@
   {
     "id": 46,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -1476,7 +1476,7 @@
   {
     "id": 47,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -1507,7 +1507,7 @@
   {
     "id": 48,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -1537,7 +1537,7 @@
   {
     "id": 49,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -1569,7 +1569,7 @@
   {
     "id": 50,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -1605,7 +1605,7 @@
   {
     "id": 51,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -1639,7 +1639,7 @@
   {
     "id": 52,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -1670,7 +1670,7 @@
   {
     "id": 53,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -1701,7 +1701,7 @@
   {
     "id": 54,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -1732,7 +1732,7 @@
   {
     "id": 55,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -1765,7 +1765,7 @@
   {
     "id": 56,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -1798,7 +1798,7 @@
   {
     "id": 57,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -1830,7 +1830,7 @@
   {
     "id": 58,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -1862,7 +1862,7 @@
   {
     "id": 59,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -1894,7 +1894,7 @@
   {
     "id": 60,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -1926,7 +1926,7 @@
   {
     "id": 61,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -1957,7 +1957,7 @@
   {
     "id": 62,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -1988,7 +1988,7 @@
   {
     "id": 63,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -2018,7 +2018,7 @@
   {
     "id": 64,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -2050,7 +2050,7 @@
   {
     "id": 65,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -2086,7 +2086,7 @@
   {
     "id": 66,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -2120,7 +2120,7 @@
   {
     "id": 67,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -2151,7 +2151,7 @@
   {
     "id": 68,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -2182,7 +2182,7 @@
   {
     "id": 69,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -2213,7 +2213,7 @@
   {
     "id": 70,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -2246,7 +2246,7 @@
   {
     "id": 71,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -2279,7 +2279,7 @@
   {
     "id": 72,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -2311,7 +2311,7 @@
   {
     "id": 73,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -2343,7 +2343,7 @@
   {
     "id": 74,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -2375,7 +2375,7 @@
   {
     "id": 75,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -2407,7 +2407,7 @@
   {
     "id": 76,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -2438,7 +2438,7 @@
   {
     "id": 77,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -2469,7 +2469,7 @@
   {
     "id": 78,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -2499,7 +2499,7 @@
   {
     "id": 79,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -2531,7 +2531,7 @@
   {
     "id": 80,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -2567,7 +2567,7 @@
   {
     "id": 81,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -2601,7 +2601,7 @@
   {
     "id": 82,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -2632,7 +2632,7 @@
   {
     "id": 83,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -2663,7 +2663,7 @@
   {
     "id": 84,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -2694,7 +2694,7 @@
   {
     "id": 85,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -2727,7 +2727,7 @@
   {
     "id": 86,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -2760,7 +2760,7 @@
   {
     "id": 87,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -2792,7 +2792,7 @@
   {
     "id": 88,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -2824,7 +2824,7 @@
   {
     "id": 89,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -2856,7 +2856,7 @@
   {
     "id": 90,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -2888,7 +2888,7 @@
   {
     "id": 91,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -2919,7 +2919,7 @@
   {
     "id": 92,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -2950,7 +2950,7 @@
   {
     "id": 93,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -2980,7 +2980,7 @@
   {
     "id": 94,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -3012,7 +3012,7 @@
   {
     "id": 95,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -3048,7 +3048,7 @@
   {
     "id": 96,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -3082,7 +3082,7 @@
   {
     "id": 97,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -3113,7 +3113,7 @@
   {
     "id": 98,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -3144,7 +3144,7 @@
   {
     "id": 99,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -3175,7 +3175,7 @@
   {
     "id": 100,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -3208,7 +3208,7 @@
   {
     "id": 101,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -3241,7 +3241,7 @@
   {
     "id": 102,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -3273,7 +3273,7 @@
   {
     "id": 103,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -3305,7 +3305,7 @@
   {
     "id": 104,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -3337,7 +3337,7 @@
   {
     "id": 105,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",
@@ -3369,7 +3369,7 @@
   {
     "id": 106,
     "company": "Scoot",
-    "logo": "./assets/logos/scoot.svg",
+    "logo": "/logos/scoot.svg",
     "logoBackground": "hsl(36, 87%, 49%)",
     "position": "Senior Software Engineer",
     "postedAt": "5h ago",
@@ -3400,7 +3400,7 @@
   {
     "id": 107,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Haskell and PureScript Dev",
     "postedAt": "20h ago",
@@ -3431,7 +3431,7 @@
   {
     "id": 108,
     "company": "Vector",
-    "logo": "./assets/logos/vector.svg",
+    "logo": "/logos/vector.svg",
     "logoBackground": "hsl(235, 10%, 23%)",
     "position": "Midlevel Back End Engineer",
     "postedAt": "1d ago",
@@ -3461,7 +3461,7 @@
   {
     "id": 109,
     "company": "Office Lite",
-    "logo": "./assets/logos/officelite.svg",
+    "logo": "/logos/officelite.svg",
     "logoBackground": "hsl(227, 62%, 48%)",
     "position": "Senior Application Engineer",
     "postedAt": "2d ago",
@@ -3493,7 +3493,7 @@
   {
     "id": 110,
     "company": "Pod",
-    "logo": "./assets/logos/pod.svg",
+    "logo": "/logos/pod.svg",
     "logoBackground": "hsl(216, 46%, 14%)",
     "position": "Remote DevOps Engineer",
     "postedAt": "2d ago",
@@ -3529,7 +3529,7 @@
   {
     "id": 111,
     "company": "Creative",
-    "logo": "./assets/logos/creative.svg",
+    "logo": "/logos/creative.svg",
     "logoBackground": "hsl(295, 55%, 21%)",
     "position": "Desktop Support Manager",
     "postedAt": "4d ago",
@@ -3563,7 +3563,7 @@
   {
     "id": 112,
     "company": "Pomodoro",
-    "logo": "./assets/logos/pomodoro.svg",
+    "logo": "/logos/pomodoro.svg",
     "logoBackground": "hsl(254, 71%, 45%)",
     "position": "iOS Engineer",
     "postedAt": "1w ago",
@@ -3594,7 +3594,7 @@
   {
     "id": 113,
     "company": "Maker",
-    "logo": "./assets/logos/maker.svg",
+    "logo": "/logos/maker.svg",
     "logoBackground": "hsl(218, 58%, 31%)",
     "position": "Senior EJB Developer",
     "postedAt": "1w ago",
@@ -3625,7 +3625,7 @@
   {
     "id": 114,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Senior Frontend Developer",
     "postedAt": "1w ago",
@@ -3656,7 +3656,7 @@
   {
     "id": 115,
     "company": "Mastercraft",
-    "logo": "./assets/logos/mastercraft.svg",
+    "logo": "/logos/mastercraft.svg",
     "logoBackground": "hsl(0, 0%, 12%)",
     "position": "App & Website Designer",
     "postedAt": "2w ago",
@@ -3689,7 +3689,7 @@
   {
     "id": 116,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Fullstack Developer",
     "postedAt": "1mo ago",
@@ -3722,7 +3722,7 @@
   {
     "id": 117,
     "company": "Typemaster",
-    "logo": "./assets/logos/typemaster.svg",
+    "logo": "/logos/typemaster.svg",
     "logoBackground": "hsl(22, 89%, 52%)",
     "position": "Technical Lead Engineer",
     "postedAt": "1mo ago",
@@ -3754,7 +3754,7 @@
   {
     "id": 118,
     "company": "Crowdfund",
-    "logo": "./assets/logos/crowdfund.svg",
+    "logo": "/logos/crowdfund.svg",
     "logoBackground": "hsl(157, 57%, 50%)",
     "position": "Front-end Developer",
     "postedAt": "1mo ago",
@@ -3786,7 +3786,7 @@
   {
     "id": 119,
     "company": "Coffeeroasters",
-    "logo": "./assets/logos/coffeeroasters.svg",
+    "logo": "/logos/coffeeroasters.svg",
     "logoBackground": "hsl(29, 60%, 87%)",
     "position": "Junior Full-Stack Developer",
     "postedAt": "1mo ago",
@@ -3818,7 +3818,7 @@
   {
     "id": 120,
     "company": "Blogr",
-    "logo": "./assets/logos/blogr.svg",
+    "logo": "/logos/blogr.svg",
     "logoBackground": "hsl(12, 79%, 52%)",
     "position": "Midweight Front-end Developer",
     "postedAt": "1mo ago",

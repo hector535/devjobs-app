@@ -11,6 +11,8 @@
   gap: clamp(0.8rem, -1.26308rem + 11.789vw, 1.5rem);
 
   background: var(--container-bg-color);
+  @include transition-bg-color();
+
   padding-inline: 1rem;
 }
 

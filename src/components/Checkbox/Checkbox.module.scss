@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/" as *;
+
 .checkbox_container {
   display: flex;
   align-items: center;
@@ -17,6 +19,8 @@
   background: var(--checkbox-bg-color);
   position: relative;
   cursor: pointer;
+
+  @include transition-bg-color();
 
   &:hover {
     background: hsla(var(--clr-primary-400), 0.25);
@@ -49,4 +53,6 @@
   flex-shrink: 0;
   color: var(--heading-color);
   font-weight: var(--fw-bold);
+
+  @include transition-text-color();
 }

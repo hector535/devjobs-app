@@ -9,11 +9,12 @@ import { JobItem } from "@/components/JobItem/JobItem";
 import { ListFooter } from "@/components/ListFooter/ListFooter";
 import { LoadingMessage } from "@/components/LoadingMessage/LoadingMessage";
 import { FilterBar } from "@/components/FilterBar/FilterBar";
+import { NoResultsMessage } from "@/components/NoResultsMessage/NoResultsMessage";
 import { FilterBarFields } from "@/types/filter_bar";
 import { extractFiltersFromURL } from "./utils";
 import style from "./jobs.module.scss";
 
-export const Jobs = () => {
+const Jobs = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [formValues, setFormValues] = useState<FilterBarFields>(() =>
@@ -48,16 +49,27 @@ export const Jobs = () => {
       )}
 
       {isLoading && <LoadingMessage />}
-      {!isLoading && (
+
+      {!isLoading && data.length === 0 && <NoResultsMessage />}
+
+      {!isLoading && !!data.length && (
         <VirtuosoGrid
           context={{ loadMore, isLoadingMore }}
           listClassName={style.virtuoso_grid}
           data={data}
           overscan={8}
-          itemContent={(_, data) => <JobItem key={data.id} job={data} />}
+          itemContent={(_, data) => (
+            <JobItem
+              key={data.id}
+              job={data}
+              onClick={() => navigate(`/jobs/${data.id}`)}
+            />
+          )}
           components={{ Footer: ListFooter }}
         />
       )}
     </main>
   );
 };
+
+export default Jobs;

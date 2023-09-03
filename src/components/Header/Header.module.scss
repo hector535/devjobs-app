@@ -1,7 +1,7 @@
 @use "../../../sass/abstracts/" as *;
 
 .header {
-  padding-block: 2rem;
+  padding-block: clamp(2rem, 1.73586rem + 1.127vw, 2.75rem);
   background-image: url("/mobile/bg-pattern-header.svg");
   background-size: cover;
   background-repeat: no-repeat;

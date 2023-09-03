@@ -1,4 +1,5 @@
 import jobs from "@/data/jobs.json";
+import { IJob } from "@/types/job";
 
 const delay = 1500;
 
@@ -8,7 +9,7 @@ export const getJobs = async (
   isFullTime: boolean,
   limit: number = 20,
   skip: number = 0
-) => {
+): Promise<IJob[]> => {
   await new Promise((resolve) => setTimeout(resolve, delay));
 
   const contract = isFullTime ? "Full Time" : "Part Time";
@@ -23,7 +24,7 @@ export const getJobs = async (
   return filteredJobs.slice(skip, skip + limit);
 };
 
-export const getJobById = async (id: number) => {
+export const getJobById = async (id: number): Promise<IJob> => {
   await new Promise((resolve) => setTimeout(resolve, delay));
 
   const selectedJob = jobs.find((j) => j.id === id);

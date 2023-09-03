@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/" as *;
+
 .job_item_container {
   --padding: 2rem;
 
@@ -10,6 +12,8 @@
 
   background: var(--container-bg-color);
 
+  @include transition-bg-color();
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,22 +21,16 @@
   position: relative;
 
   cursor: pointer;
+
+  user-select: none;
 }
 
-.company_logo_container {
+.job_company_logo {
   position: absolute;
   top: 0;
   left: var(--padding);
 
   transform: translateY(-50%);
-
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: var(--border-radius);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .sub_container {
@@ -44,10 +42,5 @@
   font-size: 1.25rem;
   font-weight: var(--fw-bold);
   color: var(--heading-color);
-}
-
-.location {
-  color: var(--clr-primary-400-hsl);
-  font-size: 0.875rem;
-  font-weight: var(--fw-bold);
+  @include transition-text-color();
 }

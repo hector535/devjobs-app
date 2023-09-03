@@ -2,3 +2,9 @@
   width: var(--container-width);
   margin-inline: auto;
 }
+
+.location {
+  font-size: 0.875rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-400-hsl);
+}

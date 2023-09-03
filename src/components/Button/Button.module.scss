@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/" as *;
+
 .btn {
   border-radius: var(--border-radius);
   border: 0;
@@ -10,8 +12,15 @@
   font-size: 1rem;
   font-weight: var(--fw-bold);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
   user-select: none;
   cursor: pointer;
+
+  @include transition-bg-text-color();
 }
 
 .primary {

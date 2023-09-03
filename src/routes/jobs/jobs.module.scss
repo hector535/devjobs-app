@@ -21,21 +21,6 @@
   transform: translateY(-50%);
 }
 
-[data-test-id="virtuoso-scroller"] {
-  &::-webkit-scrollbar {
-    width: 0.4rem;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: var(--clr-neutral-600-hsl);
-    border-radius: 100vmax;
-  }
-}
-
 .virtuoso_grid {
   display: grid;
   margin-top: 1.5625rem;

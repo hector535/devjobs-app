@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/" as *;
+
 .filter_bar_container {
   --padding: 1rem;
 
@@ -7,6 +9,8 @@
   border-radius: var(--border-radius);
 
   background: var(--container-bg-color);
+
+  @include transition-bg-color();
 
   display: grid;
   align-items: center;

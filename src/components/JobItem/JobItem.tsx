@@ -1,17 +1,17 @@
+import { CompanyLogo } from "../CompanyLogo/CompanyLogo";
 import { type JobItemProps } from "./types";
 import style from "./JobItem.module.scss";
 
 export const JobItem = (props: JobItemProps) => {
-  const { job } = props;
+  const { job, onClick } = props;
 
   return (
-    <div className={style.job_item_container}>
-      <div
-        className={style.company_logo_container}
-        style={{ background: job.logoBackground }}
-      >
-        <img src="/logos/scoot.svg" alt="Company logo" />
-      </div>
+    <div className={style.job_item_container} onClick={onClick}>
+      <CompanyLogo
+        bgColor={job.logoBackground}
+        url={job.logo}
+        className={style.job_company_logo}
+      />
 
       <div className={style.sub_container}>
         <p>
@@ -21,7 +21,7 @@ export const JobItem = (props: JobItemProps) => {
         <p>{job.company}</p>
       </div>
 
-      <p className={style.location}>{job.location}</p>
+      <p className="location">{job.location}</p>
     </div>
   );
 };

@@ -9,6 +9,7 @@
   --clr-neutral-400: 215, 24%, 80%;
   --clr-neutral-500: 212, 23%, 69%;
   --clr-neutral-600: 214, 17%, 51%;
+  --clr-neutral-900: 0, 0%, 0%;
 
   --clr-primary-300-hsl: hsl(var(--clr-primary-300));
   --clr-primary-400-hsl: hsl(var(--clr-primary-400));
@@ -20,6 +21,7 @@
   --clr-neutral-400-hsl: hsl(var(--clr-neutral-400));
   --clr-neutral-500-hsl: hsl(var(--clr-neutral-500));
   --clr-neutral-600-hsl: hsl(var(--clr-neutral-600));
+  --clr-neutral-900-hsl: hsl(var(--clr-neutral-900));
 
   --ff-regular: "Kumbh Sans", sans-serif;
 
@@ -28,6 +30,8 @@
 
   --backdrop-z-index: 10;
   --modal-z-index: 100;
+
+  --svg-fill-color: var(--clr-neutral-900-hsl);
 
   --header-height: 8.5rem;
   --border-radius: 6px;
@@ -48,6 +52,7 @@
 }
 
 [data-theme="dark"] {
+  --svg-fill-color: var(--clr-neutral-100-hsl);
   --page-bg-color: var(--clr-primary-900-hsl);
   --heading-color: var(--clr-neutral-100-hsl);
   --container-bg-color: var(--clr-primary-800-hsl);

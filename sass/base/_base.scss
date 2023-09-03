@@ -6,3 +6,16 @@
     outline-offset: 0.19rem;
   }
 }
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-neutral-600-hsl);
+  border-radius: 100vmax;
+}
