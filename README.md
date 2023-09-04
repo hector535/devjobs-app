@@ -41,7 +41,7 @@ This is a solution to the [Devjobs web app](https://www.frontendmentor.io/challe
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Devjobs web app | React + TypeScript + React Router](https://www.frontendmentor.io/solutions/rest-countries-api-react-typescript-react-query-react-router-CpKf1nq3lh)
+- Solution URL: [DevJobs App | Vite | React | SASS | TypeScript | React-Virtuoso](https://www.frontendmentor.io/solutions/devjobs-app-vite-react-sass-typescript-reactvirtuoso-AujtpN1KVZ)
 - Live Site URL: [https://devjobs-a6c52b.netlify.app/](https://devjobs-a6c52b.netlify.app/)
 
 <br>
@@ -77,6 +77,7 @@ Your users should be able to:
 - TypeScript
 - React-Router
 - SASS Modules
+- React-Virtuoso
 
 #### Test Runner
 
@@ -137,6 +138,7 @@ See the section about [deployment](https://vitejs.dev/guide/static-deploy.html) 
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [React Router](https://reactrouter.com/en/main)
 - [SASS](https://sass-lang.com/)
+- [React Virtuoso](https://virtuoso.dev/)
 
 ## Author
 
