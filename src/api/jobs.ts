@@ -4,13 +4,15 @@ import { IJob } from "@/types/job";
 const delay = 800;
 
 export const getJobs = async (
-  title: string,
-  location: string,
-  isFullTime: boolean,
+  title: string = "",
+  location: string = "",
+  isFullTime: boolean = false,
   limit: number = 20,
   skip: number = 0
 ): Promise<IJob[]> => {
   await new Promise((resolve) => setTimeout(resolve, delay));
+
+  if (limit < 0 || skip < 0) return [];
 
   const contract = isFullTime ? "Full Time" : "Part Time";
 

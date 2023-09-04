@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Navigate, RouterProvider, createHashRouter } from "react-router-dom";
-import { Root } from "./routes/roots";
+import { Root } from "./routes/root";
 import "../sass/style.scss";
 
 const Jobs = React.lazy(() => import("./routes/jobs/jobs"));
