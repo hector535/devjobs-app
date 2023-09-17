@@ -1,4 +1,4 @@
-@use "../../../sass/abstracts/" as *;
+@use "/sass/abstracts/" as *;
 
 .btn {
   border-radius: var(--border-radius);
@@ -15,12 +15,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
 
   user-select: none;
+
   cursor: pointer;
 
   @include transition-bg-text-color();
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .primary {
@@ -52,7 +58,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  opacity: 0.5;
+
   cursor: not-allowed;
 }
 

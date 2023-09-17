@@ -1,0 +1,46 @@
+@use "/sass/abstracts/" as *;
+
+.job_item_container {
+  --padding: 2rem;
+
+  height: 14.25rem;
+
+  border-radius: var(--border-radius);
+
+  padding: var(--padding);
+  padding-top: 3rem;
+
+  background: var(--container-bg-color);
+
+  @include transition-bg-color();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.job_company_logo {
+  position: absolute;
+  top: 0;
+  left: var(--padding);
+
+  transform: translateY(-50%);
+}
+
+.sub_container {
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--heading-color);
+  @include transition-text-color();
+}

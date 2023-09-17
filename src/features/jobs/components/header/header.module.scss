@@ -1,0 +1,25 @@
+@use "/sass/abstracts/" as *;
+
+.header {
+  padding-block: clamp(2rem, 1.73586rem + 1.127vw, 2.75rem);
+  background-image: url("/mobile/bg-pattern-header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: var(--header-height);
+
+  @include min-breakpoint(48rem) {
+    background-image: url("/tablet/bg-pattern-header.svg");
+    border-bottom-left-radius: 9vmax;
+  }
+
+  @include min-breakpoint(90rem) {
+    background-image: url("/desktop/bg-pattern-header.svg");
+    border-bottom-left-radius: 100vmax;
+  }
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,28 +1,22 @@
-import { useEffect, useState } from "react";
+import { useRef } from "react";
 import clsx from "clsx";
-import { type CheckboxProps } from "./types";
-import style from "./Checkbox.module.scss";
+import { type CheckboxProps } from "./checkbox.types";
+import style from "./checkbox.module.scss";
 
 export const Checkbox = (props: CheckboxProps) => {
-  const { label, checked = false, className, onChange } = props;
-
-  const [isChecked, setIsChecked] = useState(checked);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(e.target.checked);
-    onChange(e.target.checked);
-  };
+  const { label, className, ...restProps } = props;
+  const checkboxRef = useRef<HTMLInputElement>(null);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLLabelElement>) => {
-    if (e.code !== "Enter" && e.code !== "Space") return;
+    if (e.code !== "Space") return;
+    if (!checkboxRef.current) return;
 
-    setIsChecked(!isChecked);
-    onChange(!isChecked);
+    const checkbox = checkboxRef.current;
+
+    checkbox.checked = !checkbox.checked;
+
+    checkbox.dispatchEvent(new Event("change"));
   };
-
-  useEffect(() => {
-    setIsChecked(checked);
-  }, [checked]);
 
   return (
     <label
@@ -31,10 +25,10 @@ export const Checkbox = (props: CheckboxProps) => {
       className={clsx(style.checkbox_container, className)}
     >
       <input
-        className={style.hidden_checkbox}
+        {...restProps}
         type="checkbox"
-        checked={isChecked}
-        onChange={handleChange}
+        ref={checkboxRef}
+        className={style.hidden_checkbox}
       />
       <span className={style.checkbox}></span>
       <span className={style.text}>{label}</span>

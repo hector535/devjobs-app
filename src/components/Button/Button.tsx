@@ -1,8 +1,8 @@
 import React from "react";
 import clsx from "clsx";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
-import { type BaseProps } from "./types";
-import style from "./Button.module.scss";
+import { LoadingSpinner } from "@/components";
+import { type BaseProps } from "./button.types";
+import style from "./button.module.scss";
 
 export const Button = (props: BaseProps) => {
   const {
@@ -30,8 +30,8 @@ export const Button = (props: BaseProps) => {
       ...restProps,
     },
     <>
-      {!!icon && icon}
       {loading && <LoadingSpinner />}
+      {!!icon && icon}
       {children}
     </>
   );

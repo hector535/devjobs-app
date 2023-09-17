@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import ReactDOM from "react-dom";
 import clsx from "clsx";
-import { ModalProps } from "./types";
-import style from "./Modal.module.scss";
-
-const target = document.getElementById("overlays");
+import { type ModalProps } from "./modal.types";
+import style from "./modal.module.scss";
 
 export const Modal = (props: ModalProps) => {
   const { open, children, onClickOutside } = props;
@@ -23,6 +21,6 @@ export const Modal = (props: ModalProps) => {
         onClick={onClickOutside}
       ></div>
     </>,
-    target!
+    document.body
   );
 };

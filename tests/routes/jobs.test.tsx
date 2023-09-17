@@ -1,97 +1,101 @@
-import React from "react";
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, afterEach } from "vitest";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import {
   render,
   screen,
+  waitFor,
   waitForElementToBeRemoved,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { VirtuosoGridMockContext } from "react-virtuoso";
-import { getRoutes } from "../utils/routes";
-
-const mocks = vi.hoisted(() => {
-  return {
-    navigate: vi.fn(),
-  };
-});
-
-vi.mock("react-router-dom", async () => {
-  const actual = await vi.importActual("react-router-dom");
-
-  return {
-    ...actual,
-    useNavigate: vi.fn(() => mocks.navigate),
-  };
-});
+import { appRoutes } from "@/routes";
+import { QueryClientProvider } from "react-query";
+import { VirtuosoGridMockWrapper, getQueryClient } from "@/utils";
+import "@testing-library/jest-dom/vitest";
 
 describe("<Jobs />", () => {
-  it("should display a loading message when the component mounts for the first time", () => {
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
+  let user = userEvent.setup();
+  let queryclient = getQueryClient();
+  const itemsQuery = "div[class^='_job_item_container']";
 
-    render(<RouterProvider router={router} />);
+  afterEach(() => {
+    queryclient = getQueryClient();
+    user = userEvent.setup();
+  });
+
+  const waitForItemsTobeRetrieved = async (
+    container: HTMLElement,
+    query: string
+  ) => {
+    let items = container.querySelectorAll(query);
+
+    await waitFor(() => {
+      items = container.querySelectorAll(query);
+      expect(items.length).toBeGreaterThan(0);
+    });
+
+    return items;
+  };
+
+  it("should display a loading message when the component mounts for the first time", () => {
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
+
+    render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    );
 
     expect(screen.getByText(/loading/i)).toBeInTheDocument();
   });
 
-  it("should render all the jobs after the loading message has disappeared the first time the component renders", async () => {
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
+  it("should display all the jobs the first time the component mounts after the loading message disappears", async () => {
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
 
-    const { container } = render(<RouterProvider router={router} />, {
-      wrapper: ({ children }) => (
-        <VirtuosoGridMockContext.Provider
-          value={{
-            viewportHeight: 300,
-            viewportWidth: 300,
-            itemHeight: 100,
-            itemWidth: 100,
-          }}
-        >
-          {children}
-        </VirtuosoGridMockContext.Provider>
-      ),
-    });
+    const { container } = render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>,
+      {
+        wrapper: VirtuosoGridMockWrapper({
+          viewportHeight: 1000,
+          viewportWidth: 1000,
+          itemHeight: 100,
+          itemWidth: 100,
+        }),
+      }
+    );
 
-    await waitForElementToBeRemoved(screen.getByText(/loading/i));
-
-    const items = container.querySelectorAll(".virtuoso-grid-item");
+    const items = await waitForItemsTobeRetrieved(container, itemsQuery);
 
     expect(items.length).toBeGreaterThan(0);
   });
 
   it("should render a list of items filtered by position based on the value typed in the position field.", async () => {
-    const user = userEvent.setup();
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
+    const position = "senior";
 
-    const { container } = render(<RouterProvider router={router} />, {
-      wrapper: ({ children }) => (
-        <VirtuosoGridMockContext.Provider
-          value={{
-            viewportHeight: 300,
-            viewportWidth: 300,
-            itemHeight: 100,
-            itemWidth: 100,
-          }}
-        >
-          {children}
-        </VirtuosoGridMockContext.Provider>
-      ),
-    });
+    const { container } = render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>,
+      {
+        wrapper: VirtuosoGridMockWrapper({
+          viewportHeight: 1000,
+          viewportWidth: 1000,
+          itemHeight: 100,
+          itemWidth: 100,
+        }),
+      }
+    );
 
     await waitForElementToBeRemoved(screen.getByText(/loading/i));
 
-    const position = "senior";
-    const positionField = screen.getByPlaceholderText(/Filter by title/i);
+    const positionInput = screen.getByPlaceholderText(/Filter by title/i);
 
-    await user.type(positionField, position);
+    await user.type(positionInput, position);
     await user.keyboard("{enter}");
 
-    await waitForElementToBeRemoved(screen.getByText(/loading/i));
-
-    const items = container.querySelectorAll(".virtuoso-grid-item");
+    const items = await waitForItemsTobeRetrieved(container, itemsQuery);
 
     const arrItems = Array.from(items);
 
@@ -99,41 +103,36 @@ describe("<Jobs />", () => {
       el.textContent?.toLowerCase().includes(position.toLowerCase())
     );
 
-    expect(items.length).toBeGreaterThan(0);
     expect(isValid).toBeTruthy();
   });
 
   it("should render a list of items filtered by location based on the value typed in the location field.", async () => {
-    const user = userEvent.setup();
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
+    const location = "japan";
 
-    const { container } = render(<RouterProvider router={router} />, {
-      wrapper: ({ children }) => (
-        <VirtuosoGridMockContext.Provider
-          value={{
-            viewportHeight: 300,
-            viewportWidth: 300,
-            itemHeight: 100,
-            itemWidth: 100,
-          }}
-        >
-          {children}
-        </VirtuosoGridMockContext.Provider>
-      ),
-    });
+    const { container } = render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>,
+      {
+        wrapper: VirtuosoGridMockWrapper({
+          viewportHeight: 1000,
+          viewportWidth: 1000,
+          itemHeight: 100,
+          itemWidth: 100,
+        }),
+      }
+    );
 
     await waitForElementToBeRemoved(screen.getByText(/loading/i));
 
-    const location = "japan";
-    const locationField = screen.getByPlaceholderText(/filter by location/i);
+    const locationInput =
+      screen.getAllByPlaceholderText(/filter by location/i)[1];
 
-    await user.type(locationField, location);
+    await user.type(locationInput, location);
     await user.keyboard("{enter}");
 
-    await waitForElementToBeRemoved(screen.getByText(/loading/i));
-
-    const items = container.querySelectorAll(".virtuoso-grid-item");
+    const items = await waitForItemsTobeRetrieved(container, itemsQuery);
 
     const arrItems = Array.from(items);
 
@@ -141,89 +140,78 @@ describe("<Jobs />", () => {
       el.textContent?.toLowerCase().includes(location.toLowerCase())
     );
 
-    expect(items.length).toBeGreaterThan(0);
     expect(isValid).toBeTruthy();
   });
 
   it("should render only full-time jobs when the full-fime checkbox is not checked", async () => {
-    const user = userEvent.setup();
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
+    const contract = "Full Time";
 
-    const { container } = render(<RouterProvider router={router} />, {
-      wrapper: ({ children }) => (
-        <VirtuosoGridMockContext.Provider
-          value={{
-            viewportHeight: 300,
-            viewportWidth: 300,
-            itemHeight: 100,
-            itemWidth: 100,
-          }}
-        >
-          {children}
-        </VirtuosoGridMockContext.Provider>
-      ),
-    });
+    const { container } = render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>,
+      {
+        wrapper: VirtuosoGridMockWrapper({
+          viewportHeight: 1000,
+          viewportWidth: 1000,
+          itemHeight: 100,
+          itemWidth: 100,
+        }),
+      }
+    );
 
     await waitForElementToBeRemoved(screen.getByText(/loading/i));
 
-    const contract = "Full Time";
-    const fullTimeCheckbox = screen.getByLabelText(/full time/i);
+    const fullTimeCheckbox = screen.getAllByLabelText(/full time/i)[1];
 
     await user.click(fullTimeCheckbox);
     await user.keyboard("{tab}{enter}");
 
-    await waitForElementToBeRemoved(screen.getByText(/loading/i));
+    const items = await waitForItemsTobeRetrieved(container, itemsQuery);
 
-    const items = container.querySelectorAll(".virtuoso-grid-item");
     const arrItems = Array.from(items);
 
     const isValid = arrItems.every((i) =>
       i.textContent?.toLowerCase().includes(contract.toLowerCase())
     );
 
-    expect(items.length).toBeGreaterThan(0);
     expect(isValid).toBeTruthy();
   });
 
   it("should render a list of items filtered by position, location and contract", async () => {
-    const user = userEvent.setup();
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
-
-    const { container } = render(<RouterProvider router={router} />, {
-      wrapper: ({ children }) => (
-        <VirtuosoGridMockContext.Provider
-          value={{
-            viewportHeight: 300,
-            viewportWidth: 300,
-            itemHeight: 100,
-            itemWidth: 100,
-          }}
-        >
-          {children}
-        </VirtuosoGridMockContext.Provider>
-      ),
-    });
-
-    await waitForElementToBeRemoved(screen.getByText(/loading/i));
-
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
     const position = "dev";
     const location = "united states";
     const contract = "Full Time";
 
-    const positionField = screen.getByPlaceholderText(/Filter by title/i);
-    const locationField = screen.getByPlaceholderText(/filter by location/i);
-    const fullTimeCheckbox = screen.getByLabelText(/full time/i);
-
-    await user.type(positionField, position);
-    await user.type(locationField, location);
-    await user.click(fullTimeCheckbox);
-    await user.keyboard("{tab}{enter}");
+    const { container } = render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>,
+      {
+        wrapper: VirtuosoGridMockWrapper({
+          viewportHeight: 1000,
+          viewportWidth: 1000,
+          itemHeight: 100,
+          itemWidth: 100,
+        }),
+      }
+    );
 
     await waitForElementToBeRemoved(screen.getByText(/loading/i));
 
-    const items = container.querySelectorAll(".virtuoso-grid-item");
+    const positionInput = screen.getByPlaceholderText(/Filter by title/i);
+    const locationInput =
+      screen.getAllByPlaceholderText(/filter by location/i)[1];
+    const fullTimeCheckbox = screen.getAllByLabelText(/full time/i)[1];
+
+    await user.type(positionInput, position);
+    await user.type(locationInput, location);
+    await user.click(fullTimeCheckbox);
+    await user.keyboard("{tab}{enter}");
+
+    const items = await waitForItemsTobeRetrieved(container, itemsQuery);
     const arrItems = Array.from(items);
 
     const isValid = arrItems.every((i) => {
@@ -236,36 +224,36 @@ describe("<Jobs />", () => {
       );
     });
 
-    expect(items.length).toBeGreaterThan(0);
     expect(isValid).toBeTruthy();
   });
 
   it("should navigate to the job detail page when the user clicks on an item", async () => {
-    const user = userEvent.setup();
-    const routes = getRoutes();
-    const router = createMemoryRouter(routes, { initialEntries: ["/jobs"] });
+    const router = createMemoryRouter(appRoutes, { initialEntries: ["/jobs"] });
 
-    const { container } = render(<RouterProvider router={router} />, {
-      wrapper: ({ children }) => (
-        <VirtuosoGridMockContext.Provider
-          value={{
-            viewportHeight: 300,
-            viewportWidth: 300,
-            itemHeight: 100,
-            itemWidth: 100,
-          }}
-        >
-          {children}
-        </VirtuosoGridMockContext.Provider>
-      ),
-    });
+    const { container } = render(
+      <QueryClientProvider client={queryclient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>,
+      {
+        wrapper: VirtuosoGridMockWrapper({
+          viewportHeight: 1000,
+          viewportWidth: 1000,
+          itemHeight: 100,
+          itemWidth: 100,
+        }),
+      }
+    );
 
     await waitForElementToBeRemoved(screen.getByText(/loading/i));
 
-    const items = container.querySelectorAll(".virtuoso-grid-item");
+    const items = await waitForItemsTobeRetrieved(container, itemsQuery);
 
-    await user.click(items[0].firstElementChild!);
+    await user.click(items[0]);
 
-    expect(mocks.navigate).toHaveBeenCalled();
+    await waitForElementToBeRemoved(screen.getByText(/loading/i));
+
+    expect(
+      screen.getAllByRole("link", { name: /apply now/i }).length
+    ).toBeGreaterThan(0);
   });
 });

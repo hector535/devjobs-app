@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getViewportSize } from "@/utils/viewport";
+import { getViewportSize } from "@/utils";
 
 export const useViewport = () => {
   const [size, setSize] = useState<{ vw: number; vh: number }>(getViewportSize);
