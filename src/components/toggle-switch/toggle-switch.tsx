@@ -24,12 +24,15 @@ export const ToggleSwitch = () => {
   return (
     <label
       tabIndex={0}
+      htmlFor="toggle"
       className={style.toggle_switch_container}
       onKeyDown={handleKeyDown}
     >
       <Icon name="sun" />
       <span className={style.toggle}>
         <input
+          id="toggle"
+          name="toggle"
           type="checkbox"
           className={style.inner_checkbox}
           checked={checked}
